@@ -1,0 +1,243 @@
+﻿BUILDINGS={
+	if = {
+		limit = {
+			exists = c:RUS
+			s:STATE_MAZOVIA = {
+				any_scope_state = {
+					owner = c:RUS
+				}
+			}
+		}
+		s:STATE_MAZOVIA={
+			region_state:RUS={
+				create_building={
+					building="building_gaudi_saxon"
+					level=1
+				}
+			}
+		}
+	}
+	else = {
+		s:STATE_MAZOVIA = {
+			random_scope_state = {
+				create_building={
+					building="building_gaudi_saxon"
+					level=1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = c:CHI
+			s:STATE_BEIJING = {
+				any_scope_state = {
+					owner = c:CHI
+				}
+			}
+		}
+		s:STATE_BEIJING={
+			region_state:CHI={
+				create_building={
+					building="building_gaudi_summer"
+					level=1
+				}
+			}
+		}
+	}
+	else = {
+		s:STATE_BEIJING = {
+			random_scope_state = {
+				create_building={
+					building="building_gaudi_summer"
+					level=1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = c:AUS
+			s:STATE_VENETIA = {
+				any_scope_state = {
+					owner = c:AUS
+				}
+			}
+		}
+		s:STATE_VENETIA={
+			region_state:AUS={
+				create_building={
+					building="building_gaudi_campanile"
+					level=1
+				}
+			}
+		}
+	}
+	else = {
+		p:xB001A0 = {
+			state = {
+				create_building={
+					building="building_gaudi_campanile"
+					level=1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			exists = c:TIB
+			s:STATE_LHASA = {
+				any_scope_state = {
+					owner = c:TIB
+				}
+			}
+		}
+		s:STATE_LHASA={
+			region_state:TIB={
+				create_building={
+					building="building_gaudi_potala"
+					level=1
+				}
+			}
+		}
+	}
+	else = {
+		p:x286514 = {
+			state = {
+				create_building={
+					building="building_gaudi_potala"
+					level=1
+				}
+			}
+		}
+	}
+	#This part is changed for Compatch
+	if = {
+		limit = {
+			exists = c:HZJ #Compatch
+			s:STATE_EASTERN_AFGHANISTAN = { #Compatch
+				any_scope_state = {
+					owner = c:HZJ #Compatch
+				}
+			}
+		}
+		s:STATE_EASTERN_AFGHANISTAN={ #Compatch
+			region_state:HZJ={ #Compatch
+				create_building={
+					building="building_gaudi_bamiyan"
+					level=1
+				}
+			}
+		}
+	}
+	else = {
+		s:STATE_EASTERN_AFGHANISTAN = {
+			random_scope_state = {
+				create_building={
+					building="building_gaudi_bamiyan"
+					level=1
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
