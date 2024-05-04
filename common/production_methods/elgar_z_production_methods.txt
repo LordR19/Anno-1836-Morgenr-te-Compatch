@@ -1,0 +1,69 @@
+﻿#######################################
+# MR ANNO COMPATCH PRODUCTION METHODS #
+#######################################
+
+#Instruments
+
+pm_elgar_no_instruments = {
+	texture = "gfx/interface/icons/production_method_icons/elgar_no_instruments_pm.dds"
+
+	unlocking_technologies = {
+	}			
+	
+	building_modifiers = {
+	}
+}
+
+pm_elgar_artisan_instruments = {
+	texture = "gfx/interface/icons/production_method_icons/elgar_artisan_instruments_pm.dds"
+
+	unlocking_technologies = {
+		elgar_classicism_tech
+	}			
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 8
+			goods_input_copper_add = 1
+			
+			# output goods
+			goods_output_elgar_instruments_add = 15
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+pm_elgar_industrial_instruments = {
+	texture = "gfx/interface/icons/production_method_icons/elgar_industrial_instruments_pm.dds"
+	
+	unlocking_technologies = {
+		mechanical_tools
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 8
+			goods_input_copper_add = 1
+			goods_input_tools_add = 5
+			
+			# output goods
+			goods_output_elgar_instruments_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 500			
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 3
+		}
+	}
+}

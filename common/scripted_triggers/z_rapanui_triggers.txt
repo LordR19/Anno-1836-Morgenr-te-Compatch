@@ -1,0 +1,21 @@
+﻿##############################
+# RAPANUI SCRIPTED TRIGGERS  #
+##############################
+
+#by Marco Dandolo
+
+############################
+
+#Oceanic country
+
+rapanui_country_is_in_oceania = {
+	exists = capital
+	capital = {
+		OR = {
+			region = sr:region_polynesia
+			region = sr:region_micronesia
+			region = sr:region_melanesia
+			region = sr:region_oceania		
+		}
+	}
+}
