@@ -2,6 +2,8 @@
 # MR ANNO COMPATCH SCRIPTED BUTTONS #
 #####################################
 
+# !!! Changed Scripted Buttons also need to be applied to sGUI !!! #
+
 ######NORTHWEST EXPEDITION######
 
 mr_northwest_expedition_button = {
@@ -41,7 +43,7 @@ mr_northwest_expedition_button = {
 			}
 		}
 		OR = {
-			any_scope_interest_marker = {
+			any_scope_interest_marker = { #Compatch: Changed from region_canada
 				region = sr:region_ruperts_land
 			}
 			any_scope_interest_marker = {
@@ -159,7 +161,7 @@ mr_arctica_expedition_button = {
 					}
 				}		
 			}
-			OR = {
+			OR = { #Compatch changed From Nenetsia to Arkhangelsk
 				any_scope_state = {
 					state_region = s:STATE_ARKHANGELSK
 				}
@@ -236,6 +238,7 @@ mr_arctica_expedition_button = {
 
 ###Other special musical institutions###
 
+# This Button is not in use currently
 mr_concertgebouw_button = {
 	name = "mr_concertgebouw_button"
 	desc = "mr_concertgebouw_button_desc"

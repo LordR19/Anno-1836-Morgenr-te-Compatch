@@ -42,10 +42,10 @@ dubois_add_mountains = {
 	s:STATE_SAVOY = {
 		add_state_trait = dubois_state_trait_aiguille_verte
 	}
-	#s:STATE_EAST_SWITZERLAND = {
+	#s:STATE_EAST_SWITZERLAND = { #Compatch
 	#	add_state_trait = dubois_state_trait_matterhorn
 	#}
-	s:STATE_EAST_SWITZERLAND = {
+	s:STATE_EAST_SWITZERLAND = { #Compatch
 		add_state_trait = dubois_state_trait_dufourspitze
 	}
 	s:STATE_GREATER_CAUCASUS = {
