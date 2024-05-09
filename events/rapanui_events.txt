@@ -12,11 +12,70 @@ namespace = rapanui
 #Updated Event List
 
 #Imperialist Expedition Events
-
+#Rapanui 240: Wallace Line
 #Rapanui 255: Hostile Reaction
 #Rapanui 257: Diplomatic Delegation
 
-#Rapanui 443:
+#Rapanui 433: National maritime disaster in $COUNTRY$
+
+#Rapanui 240: Wallace Line
+
+rapanui.240 = {
+	dlc = dlc_morgenrote
+
+	type = country_event
+
+	title = rapanui.240.t
+	desc = rapanui.240.d
+	flavor = rapanui.240.f
+
+	placement = scope:rapanui_pacific_expedition_location
+
+	duration = 3
+
+	gui_window = event_window_1char_tabloid
+
+	left_icon = scope:rapanui_scientist
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_navigation.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_global_variable = rapanui_wallace_line_found
+		set_rapanui_expedition_leader_effect = yes
+		set_rapanui_scientist_effect = yes
+		random_state = {
+			limit = {
+				state_region = s:STATE_BALI
+			}
+			save_scope_as = rapanui_pacific_expedition_location
+		}
+	}
+
+	option = {
+		name = rapanui.240.g #A historical day
+		default_option = yes
+		dubois_add_x_specimen_effect = { AMOUNT = 10000 }
+		dubois_large_add_technology = yes
+		post_notification = rapanui_wallace_notification
+		scope:rapanui_scientist = {
+			set_variable = dubois_wallace_line_discovered_var
+			add_modifier = {
+				name = rapanui_russel_wallace_modifier
+			}
+		}
+		naturalist_experience_gain_effect = {
+			AMOUNT = "100"
+		}
+	}
+
+	after = {
+	}
+}
 
 
 #Rapanui 255: Hostile Reaction

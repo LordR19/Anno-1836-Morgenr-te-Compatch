@@ -14,7 +14,12 @@ rapanui_country_is_in_oceania = {
 		OR = {
 			region = sr:region_polynesia
 			region = sr:region_micronesia
-			region = sr:region_melanesia
+			#region = sr:region_melanesia 				#To exclude Eastern New Guinea used the state regions below:
+			state_region = s:STATE_SOLOMON_ISLANDS
+			state_region = s:STATE_BOUGAINVILLE
+			state_region = s:STATE_FIJI
+			state_region = s:STATE_VANUATU
+			state_region = s:STATE_KANAK
 			region = sr:region_oceania		
 		}
 	}
