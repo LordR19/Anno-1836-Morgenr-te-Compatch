@@ -1,0 +1,85 @@
+﻿#################################
+# GEOGRAPHIC SCRIPTED TRIGGERS  #
+#################################
+
+#by Marco Dandolo & Lord R
+
+############################
+
+###Arctic States###
+mr_arctic_states_trigger = {
+	any_scope_state = {
+		OR = {
+			state_region = s:STATE_GREENLAND
+			state_region = s:STATE_NORTHERN_NORWAY
+			state_region = s:STATE_NORTHERN_NORWAY
+			state_region = s:STATE_ALASKA
+			state_region = s:STATE_NUNAVUT
+			state_region = s:STATE_NENETSIA
+		}
+	}
+}
+
+###States where Polar Bears can be bred###
+mr_polar_bear_breeding_region_trigger = {
+	OR = {
+		state_region = s:STATE_ICELAND
+		state_region = s:STATE_GREENLAND
+		state_region = s:STATE_NORTHERN_NORWAY
+		state_region = s:STATE_ARKHANGELSK #Changed for Compatch
+		state_region = s:STATE_OB
+		state_region = s:STATE_UPPER_YENISEYSK
+		state_region = s:STATE_YAKUTSK
+		state_region = s:STATE_CHUKOTKA
+		state_region = s:STATE_KAMCHATKA
+		state_region = s:STATE_ALASKA
+		state_region = s:STATE_YUKON_TERRITORY
+		state_region = s:STATE_NORTHWEST_TERRITORIES
+		state_region = s:STATE_NUNAVUT
+		state_region = s:STATE_MANITOBA
+		state_region = s:STATE_ONTARIO
+		state_region = s:STATE_QUEBEC
+		state_region = s:STATE_NEWFOUNDLAND
+	}
+}
+
+###States where Sea Lions can be bred###
+mr_sea_lions_breeding_region_trigger = {
+	#Changed from Oceania to this for Compatch
+	OR = {
+		region = sr:region_oceania
+		region = sr:region_melanesia
+		region = sr:region_micronesia
+		region = sr:region_polynesia
+	}
+}
+
+###States where Cassowary can be bred###
+mr_cassowary_breeding_region_trigger = {
+	OR = {
+		#Changed from Oceania to this for Compatch
+		region = sr:region_moluccas
+		region = sr:region_melanesia
+	}
+}
+
+###State Region for the Wallace line###
+mr_wallace_line_state_region_trigger = {
+	state_region = s:STATE_WEST_MICRONESIA
+}
+
+###Region for the Hostile Reaction Event (rapanui.55)###
+mr_hostile_reaction_state_region_trigger = {
+	OR = {
+		region = sr:region_malacca
+		region = sr:region_java
+		region = sr:region_makasser
+		region = sr:region_moluccas
+		region = sr:region_philippines					
+	}
+}
+
+###Region for the Arctic Coast (used in rapanui.433)###
+mr_cnadian_arctic_coast_region_trigger = {
+	region = sr:region_ruperts_land
+}
