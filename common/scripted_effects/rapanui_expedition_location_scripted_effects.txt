@@ -2,10 +2,6 @@
 # MR ANNO COMPATCH SCRPITED EFFECTS #
 #####################################
 
-######GEOLOGY######
-
-#Mountain Expedition
-
 rapanui_pacific_expedition_location_effect = {
 	if = {
 		limit = {
