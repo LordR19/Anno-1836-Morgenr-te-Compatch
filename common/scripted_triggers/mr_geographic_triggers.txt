@@ -65,11 +65,12 @@ mr_cassowary_breeding_region_trigger = {
 
 ###State Region for the Wallace line###
 mr_wallace_line_state_region_trigger = {
-	state_region = s:STATE_WEST_MICRONESIA
+	state_region = s:STATE_BALI
 }
 
 ###Region for the Hostile Reaction Event (rapanui.55)###
 mr_hostile_reaction_state_region_trigger = {
+	#Changed from region_indonesia
 	OR = {
 		region = sr:region_malacca
 		region = sr:region_java
@@ -81,5 +82,5 @@ mr_hostile_reaction_state_region_trigger = {
 
 ###Region for the Arctic Coast (used in rapanui.433)###
 mr_canadian_arctic_coast_region_trigger = {
-	region = sr:region_ruperts_land
+	region = sr:region_ruperts_land #Changed from region_canada
 }
