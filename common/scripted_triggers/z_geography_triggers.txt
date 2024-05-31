@@ -1,0 +1,28 @@
+﻿### State geography triggers
+
+state_is_in_europe = { #region_low_countries was missing. Remove once 
+	OR = {
+		region = sr:region_north_germany
+		region = sr:region_south_germany
+		region = sr:region_low_countries
+		region = sr:region_england
+		region = sr:region_iberia
+		region = sr:region_france
+		region = sr:region_occitania
+		region = sr:region_rhine
+		region = sr:region_italy	
+		region = sr:region_poland
+		region = sr:region_danubia
+		region = sr:region_balkans
+		region = sr:region_baltic
+		state_region = s:STATE_PELOPONNESE 
+		state_region = s:STATE_IONIAN_ISLANDS 
+		state_region = s:STATE_ATTICA 
+		state_region = s:STATE_THESSALIA 
+		state_region = s:STATE_MACEDONIA 
+		state_region = s:STATE_WESTERN_THRACE 
+		state_region = s:STATE_WEST_AEGEAN_ISLANDS 
+		state_region = s:STATE_EAST_AEGEAN_ISLANDS 
+		state_region = s:STATE_EASTERN_THRACE
+	}
+}
